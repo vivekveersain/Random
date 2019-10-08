@@ -1,4 +1,3 @@
-#Sudoku Solver!!
 from time import time
 start=time()
 sudokus=[]
