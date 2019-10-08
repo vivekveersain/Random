@@ -1,3 +1,7 @@
+"""
+@author: Vievk V. Arya [github.com/vivekveersain]
+"""
+
 from time import time
 start=time()
 sudokus=[]

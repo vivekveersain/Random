@@ -1,3 +1,7 @@
+"""
+@author: Vievk V. Arya [github.com/vivekveersain]
+"""
+
 import mutagen
 import os
 

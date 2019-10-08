@@ -1,3 +1,7 @@
+"""
+@author: Vievk V. Arya [github.com/vivekveersain]
+"""
+
 python /Users/vivekarya/git/Random/music_cleaner.py
 find /Users/vivekarya/Music -type d -empty -delete
 

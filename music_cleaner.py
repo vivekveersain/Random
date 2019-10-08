@@ -1,5 +1,6 @@
-#!/usr/bin/env python
-
+"""
+@author: Vievk V. Arya [github.com/vivekveersain]
+"""
 import mutagen
 from mutagen.easyid3 import EasyID3
 import os
