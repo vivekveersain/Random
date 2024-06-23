@@ -23,6 +23,7 @@ class Deep:
     def check(self):
         try: self.auth()
         except: pass
+        last_info = ""
         while True:
             try:
                 all_circs = []
@@ -43,13 +44,15 @@ class Deep:
                     if circ["used"]:
                         used_circuit += str(circ["id"]) + " >> " + "> ".join(set(circ["targets"])) + " " + "> ".join(circ["path"]) + " || "
                 info = "Total circuits: %d | %s" % (len(all_circs), used_circuit)
-                self.printer(info)
+                if info!= last_info: self.printer(info)
+                last_info = info
             except KeyboardInterrupt:
                 self.printer("Exiting...")
                 return
             except:
                 info = "waiting for circuit to come online..."
                 self.printer(info)
+                last_info = info
                 time.sleep(4)
                 #if not self.cont.is_authenticated(): pass
                 try: self.auth()
