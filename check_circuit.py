@@ -42,7 +42,7 @@ class Deep:
                 used_circuit = ""
                 for circ in all_circs:
                     if circ["used"]:
-                        used_circuit += str(circ["id"]) + " >> " + "> ".join(set(circ["targets"])) + " " + "> ".join(circ["path"]) + " || "
+                        used_circuit += str(circ["id"]) + ">>" + "> ".join(set(circ["targets"])) + "@" + "> ".join(circ["path"]) + " || "
                 info = "Total circuits: %d | %s" % (len(all_circs), used_circuit)
                 if info!= last_info: self.printer(info)
                 last_info = info
