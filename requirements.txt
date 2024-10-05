@@ -2,3 +2,4 @@ dash
 pandas
 requests
 lxml
+dash_bootstrap_components
