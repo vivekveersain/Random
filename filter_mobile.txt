@@ -13,6 +13,11 @@ www.reddit.com##shreddit-post[post-type="promoted"]
 www.reddit.com##shreddit-post:has(span:has-text(/^Promoted$/))
 www.reddit.com##shreddit-post:has(span:has-text(APP))
 
-www.reddit.com##shreddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar)\//i))
+www.reddit.com##shreddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl|nba|rcb|indiantellytalk)\//i))
 
-
+www.reddit.com##shreddit-post:has(a[href]:has-text(/gossip/i))
+www.reddit.com##shreddit-post:has(a[href]:has-text(/kolly/i))
+www.reddit.com##shreddit-post:has(a[href]:has-text(/ollywood/i))
+www.reddit.com##shreddit-post:has(a[href]:has-text(/tards/i))
+www.reddit.com##shreddit-post:has(a[href]:has-text(/cric/i))
+www.reddit.com##shreddit-post:has(a[href]:has-text(/splitsvilla/i))
