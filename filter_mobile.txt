@@ -1,0 +1,18 @@
+! Reddit mobile anti-scroll fixes
+www.reddit.com##html:style(overflow-y:auto!important;)
+www.reddit.com##body:style(overflow-y:auto!important;)
+www.reddit.com##body:style(position:static!important;)
+
+! Common app-install overlays
+www.reddit.com##.DualPartInterstitial
+www.reddit.com###xpromo-bottom-sheet
+www.reddit.com##.XPromoPopupRpl
+
+! Reddit cleanup
+www.reddit.com##shreddit-post[post-type="promoted"]
+www.reddit.com##shreddit-post:has(span:has-text(/^Promoted$/))
+www.reddit.com##shreddit-post:has(span:has-text(APP))
+
+www.reddit.com##shreddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar)\//i))
+
+

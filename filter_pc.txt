@@ -1,0 +1,83 @@
+! 25 Sept 2025 https://mail.google.com
+mail.google.com##.CRPU9d > div
+
+! 25 Sept 2025 https://www.youtube.com
+www.youtube.com###buttons > ytd-button-renderer.ytd-masthead.style-scope > yt-button-shape
+
+! 26 Sept 2025 https://9gag.com
+9gag.com##.signup-side-banner
+
+! 26 Sept 2025 https://news.google.com
+news.google.com##.gb_Wd.gb_Ld.gb_Id
+
+! 26 Sept 2025 https://9gag.com
+9gag.com##.verify-email-banner
+
+! 27 Sept 2025 https://www.wionews.com
+www.wionews.com###__next > .ads_adsBlock__8hCp1
+www.wionews.com##.articleDetailPage.undefined > .padT10.ads_adsBlock__8hCp1
+
+! 27 Sept 2025 https://web.whatsapp.com
+web.whatsapp.com##.xl56j7k.xyj1x25.x13fuv20.x178xt8z.x150wa6m.xh8yej3.xoz0ns6.x1ey2m1c.x10l6tqk.x1a8lsjc.xz9dl7a.x6s0dn4.x1q0g3np.x2lwn1j.xeuugli.x12fk4p8.x1oa3qoh.xozqiw3.x78zum5.x1g77sc7.xdl72j9.xs83m0k.x1c4vz4f
+
+! 28 Sept 2025 https://web.whatsapp.com
+web.whatsapp.com##.xyj1x25.x13fuv20.x178xt8z.x150wa6m.xh8yej3.xoz0ns6.x1ey2m1c.x10l6tqk.x1a8lsjc.xz9dl7a.x6s0dn4.x1q0g3np.x1qughib.x2lwn1j.xeuugli.x12fk4p8.x1oa3qoh.xozqiw3.x78zum5.x1g77sc7.xdl72j9.xs83m0k.x1c4vz4f
+
+! 22 Nov 2025 https://www.youtube.com
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(2)
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(3)
+
+! 3 Jan 2026 https://www.hindustantimes.com
+||www.livemint.com/lm-img/cdp/Storefront_Images/1755594516867.png$image
+
+! 8 Jan 2026 https://www.youtube.com
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope
+www.youtube.com###contents > ytd-rich-grid-renderer
+
+! 3 Mar 2026 https://accounts.google.com
+accounts.google.com###animated-container
+
+! 15 Mar 2026 https://www.reddit.com
+||accounts.google.com/gsi/iframe/select$subdocument
+www.reddit.com##.flex-auto.right-sidebar-contents
+www.reddit.com###credential_picker_container
+www.reddit.com##.xs\:overflow-x-hidden.xs\:overflow-y-auto.xs\:max-h-screen-without-header.xs\:top-\[56px\].xs\:sticky.styled-scrollbars.s\:flex.hidden.justify-start.flex-col.xs\:min-h-screen-without-header.max-w-\[316px\].w-\[316px\].min-w-0.right-sidebar
+www.reddit.com###RESOURCES
+www.reddit.com##.font-normal > faceplate-tracker > .mt-0.list-none.relative > .s\:rounded-2.bg-transparent.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.hover\:text-secondary-hover.text-secondary.gap-\[0\.5rem\].px-md.relative.justify-between.flex
+www.reddit.com##.justify-end.flex-col.flex.grow.py-md.visible
+www.reddit.com##.px-md.border-neutral-border.border-b.border-0.border-solid.pointer-events-auto.bg-neutral-background.v2
+
+www.reddit.com##shreddit-post[post-type="promoted"]
+www.reddit.com##shreddit-post:has(span:has-text(Promoted))
+www.reddit.com##shreddit-post:has(span:has-text(APP))
+! Blocking Subreddits
+www.reddit.com##shreddit-post:has(a[href^="/r/BollyBlindsNGossip/"])
+www.reddit.com##shreddit-post:has(a[href^="/r/"][href*="ollywood"])
+www.reddit.com##shreddit-post:has(a[href^="/r/"]:matches-attr(href="/r/(formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl)/"))
+
+! 15 Mar 2026 https://www.reddit.com
+www.reddit.com##shreddit-post:has(a[href^="/r/InstaCelebsGossip/"])
+
+! 26 Mar 2026 https://chatgpt.com
+chatgpt.com##.pb-6.p-4.border-t.gap-2.flex-col.flex.border-token-border-heavy.bg-token-bg-tertiary.overflow-hidden.max-w-full.w-full.z-\[100\]
+
+! 27 Mar 2026 https://www.youtube.com
+www.youtube.com##.you-chat-entrypoint-button.ytd-menu-renderer.style-scope.ytSpecButtonViewModelHost > .yt-spec-button-shape-next--enable-backdrop-filter-experiment.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
+www.youtube.com##yt-button-shape > .yt-spec-button-shape-next--enable-backdrop-filter-experiment.yt-spec-button-shape-next--icon-leading.yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal.yt-spec-button-shape-next
+
+! 8 Apr 2026 https://www.reddit.com
+www.reddit.com##.gap-xs.items-center.flex-wrap.gap-\[var\(--rem4\)\].flex.text-neutral-content-weak
+
+! 15 Apr 2026 https://www.bloomberg.com
+www.bloomberg.com##.EM37iWv_83CXjXyTo0Ph.lQavdEW1XUimtPgYTqC1.e0fvyukrpqtAOhcmlcfC.gOd8vE9XP37ZNrhcEO8o
+
+! 22 Apr 2026 https://ntfy.sh
+ntfy.sh##.css-1pxjsah.MuiDrawer-paperAnchorDockedLeft.MuiDrawer-paperAnchorLeft.MuiDrawer-paper.MuiPaper-elevation0.MuiPaper-elevation.MuiPaper-root > .css-1frd13f.MuiList-padding.MuiList-root > .css-eiew53.MuiAlert-standard.MuiAlert-standardWarning.MuiAlert-colorWarning.MuiAlert-root.MuiPaper-elevation0.MuiPaper-rounded.MuiPaper-elevation.MuiPaper-root
+ntfy.sh##.css-1pxjsah.MuiDrawer-paperAnchorDockedLeft.MuiDrawer-paperAnchorLeft.MuiDrawer-paper.MuiPaper-elevation0.MuiPaper-elevation.MuiPaper-root > .css-1frd13f.MuiList-padding.MuiList-root > .css-1yhwaoe.MuiBox-root > .css-uvg8rf.MuiListItemButton-gutters.MuiListItemButton-root.MuiButtonBase-root
+
+! 7 Jun 2026 https://www.youtube.com
+www.youtube.com###voice-search-button > .ytd-masthead.style-scope
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-section-renderer.style-scope:nth-of-type(2)
+
+
