@@ -15,6 +15,6 @@ www.reddit.com##shreddit-post:has(span:has-text(APP))
 
 www.reddit.com##shreddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar)\//i))
 
-www.reddit.com##shreddit-post:has(a[href*="ollywood"])
-www.reddit.com##shreddit-post:has(a[href*="kolly"])
-www.reddit.com##shreddit-post:has(a[href*="gossip"])
+www.reddit.com##shreddit-post:has(a[href]:has-text(gossip))
+www.reddit.com##shreddit-post:has(a[href]:has-text(kolly))
+www.reddit.com##shreddit-post:has(a[href]:has-text(ollywood))
