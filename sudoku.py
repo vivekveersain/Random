@@ -112,6 +112,7 @@ def SOLVE(S,advance=True, OPTIONS=False):
     solvable = True
     while S.count('-')>0 and solvable:
         S,options,solvable=LOGIC(S)
+        input(PRINT(S))
     if advance:
         for x in range(81):
             if len(options[x])==2:
@@ -138,6 +139,7 @@ def SOLVE(S,advance=True, OPTIONS=False):
 solved,unsolved,counter=0,0,0
 LEN=len(sudokus)
 for S in sudokus:
+    PRINT(S)
     counter+=1
     if len(S)!=81:
         input("Problem has %d characters" % len(S))
@@ -146,7 +148,7 @@ for S in sudokus:
     while S.count('-')>0 and solvable:
         S,solvable=SOLVE(S)
     if VERIFY(S):
-        #PRINT(S)
+        PRINT(S)
         solved+=1
     else:
         S,solvable=SOLVE(S,False,False)
@@ -154,6 +156,6 @@ for S in sudokus:
             solved+=1
         else: unsolved+=1
     t=solved/(time()-start)
-    print('\r%d+%d/%d(%d) || %f || %f'%(unsolved,solved,counter,LEN,t,1/t),end='')
-    
+    # print('\r%d+%d/%d(%d) || %f || %f'%(unsolved,solved,counter,LEN,t,1/t),end='')
+PRINT(S)
 input('\n\nSolved in %f seconds'%(time()-start))
