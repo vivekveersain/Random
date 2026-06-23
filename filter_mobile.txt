@@ -1,14 +1,5 @@
 ||accounts.google.com/gsi/iframe/select$subdocument
 
-! Particular subreddits
-www.reddit.com##shwww.reddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl|nba|rcb|indiantellytalk|TMKOC|Kerala)\//i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/gossip/i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/kolly/i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/ollywood/i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/tards/i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/cric/i))
-www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/splitsvilla/i))
-
 ! www.reddit mobile anti-scroll fixes
 www.reddit.com##html:style(overflow-y:auto!important;)
 www.reddit.com##body:style(overflow-y:auto!important;)
