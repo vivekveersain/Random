@@ -1,3 +1,5 @@
+||accounts.google.com/gsi/iframe/select$subdocument
+
 ! Particular subreddits
 www.reddit.com##shwww.reddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl|nba|rcb|indiantellytalk|TMKOC|Kerala)\//i))
 www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/gossip/i))
@@ -21,10 +23,6 @@ www.reddit.com##.XPromoPopupRpl
 www.reddit.com##shwww.reddit-post[post-type="promoted"]
 www.reddit.com##shwww.reddit-post:has(span:has-text(/^Promoted$/))
 www.reddit.com##shwww.reddit-post:has(span:has-text(APP))
-
-||accounts.google.com/gsi/iframe/select$subdocument
-
-! 18 Jun 2026 https://www.reddit.com
 www.reddit.com###xpromo-small-header
 www.reddit.com##div#app-upsell-blocking-bottom-sheet-direct.rpl-bottom-sheet > .bg-transparent
 www.reddit.com##.w-full > .flex-1.nd\:visible
@@ -50,9 +48,7 @@ www.reddit.com##body.scroll-is-blocked:style(overflow: auto !important; touch-ac
 ! Popup removal rules
 www.reddit.com###app-upsell-blocking-bottom-sheet-direct > .bg-transparent 
 www.reddit.com##app-upsell-blocking-bottom-sheet-direct
-
 www.reddit.com##.DualPartInterstitial
-
 www.reddit.com###xpromo-bottom-sheet
 
 ! www.reddit app ad
