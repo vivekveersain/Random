@@ -30,12 +30,9 @@ www.reddit.com##div#app-upsell-blocking-bottom-sheet-direct.rpl-bottom-sheet > .
 www.reddit.com##.w-full > .flex-1.nd\:visible
 www.reddit.com###answers-nav-button > .justify-center.items-center.flex > .flex
 
- www.reddit app-upsell bottom sheet and scroll lock
+! www.reddit app-upsell bottom sheet and scroll lock
 www.reddit.com##rpl-bottom-sheet[blocking]:remove()
 www.reddit.com##rpl-bottom-sheet[id="app-upsell-blocking-bottom-sheet-direct"]:remove()
-www.reddit.com##app-upsell-blocking-bottom-sheet-direct:remove()
-www.reddit.com## ^ # (note: original line is preserved below exactly)
-www.reddit.com##app-upsell-blocking-bottom-sheet-direct:remove()
 www.reddit.com###app-upsell-blocking-bottom-sheet-direct:remove()
 
 ! Unconditional scroll restoration (does not depend on class state)
