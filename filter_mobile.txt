@@ -1,4 +1,13 @@
-! Reddit mobile anti-scroll fixes
+! Particular subreddits
+www.reddit.com##shwww.reddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl|nba|rcb|indiantellytalk|TMKOC|Kerala)\//i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/gossip/i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/kolly/i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/ollywood/i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/tards/i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/cric/i))
+www.reddit.com##shwww.reddit-post:has(a[href]:has-text(/splitsvilla/i))
+
+! www.reddit mobile anti-scroll fixes
 www.reddit.com##html:style(overflow-y:auto!important;)
 www.reddit.com##body:style(overflow-y:auto!important;)
 www.reddit.com##body:style(position:static!important;)
@@ -8,16 +17,59 @@ www.reddit.com##.DualPartInterstitial
 www.reddit.com###xpromo-bottom-sheet
 www.reddit.com##.XPromoPopupRpl
 
-! Reddit cleanup
-www.reddit.com##shreddit-post[post-type="promoted"]
-www.reddit.com##shreddit-post:has(span:has-text(/^Promoted$/))
-www.reddit.com##shreddit-post:has(span:has-text(APP))
+! www.reddit cleanup (promoted / app-like spam)
+www.reddit.com##shwww.reddit-post[post-type="promoted"]
+www.reddit.com##shwww.reddit-post:has(span:has-text(/^Promoted$/))
+www.reddit.com##shwww.reddit-post:has(span:has-text(APP))
 
-www.reddit.com##shreddit-post:has(a[href]:matches-attr(href=/\/r\/(BollyBlindsNGossip|formula1|splitsvillaMTV|Cricket|tollywood|Gunners|Dhurandhar|ipl|nba|rcb|indiantellytalk)\//i))
+||accounts.google.com/gsi/iframe/select$subdocument
 
-www.reddit.com##shreddit-post:has(a[href]:has-text(/gossip/i))
-www.reddit.com##shreddit-post:has(a[href]:has-text(/kolly/i))
-www.reddit.com##shreddit-post:has(a[href]:has-text(/ollywood/i))
-www.reddit.com##shreddit-post:has(a[href]:has-text(/tards/i))
-www.reddit.com##shreddit-post:has(a[href]:has-text(/cric/i))
-www.reddit.com##shreddit-post:has(a[href]:has-text(/splitsvilla/i))
+! 18 Jun 2026 https://www.reddit.com
+www.reddit.com###xpromo-small-header
+www.reddit.com##div#app-upsell-blocking-bottom-sheet-direct.rpl-bottom-sheet > .bg-transparent
+www.reddit.com##.w-full > .flex-1.nd\:visible
+www.reddit.com###answers-nav-button > .justify-center.items-center.flex > .flex
+
+ www.reddit app-upsell bottom sheet and scroll lock
+www.reddit.com##rpl-bottom-sheet[blocking]:remove()
+www.reddit.com##rpl-bottom-sheet[id="app-upsell-blocking-bottom-sheet-direct"]:remove()
+www.reddit.com##app-upsell-blocking-bottom-sheet-direct:remove()
+www.reddit.com## ^ # (note: original line is preserved below exactly)
+www.reddit.com##app-upsell-blocking-bottom-sheet-direct:remove()
+www.reddit.com###app-upsell-blocking-bottom-sheet-direct:remove()
+
+! Unconditional scroll restoration (does not depend on class state)
+www.reddit.com##html:style(overflow: auto !important)
+www.reddit.com##body:style(overflow: auto !important; overflow-y: scroll !important; touch-action: auto !important; overscroll-behavior: auto !important; padding-right: 0 !important; position: static !important)
+
+! Neutralise the class rules at the source if they still apply
+www.reddit.com##body.rpl-scroll-lock:style(overflow: auto !important; padding-right: 0 !important)
+www.reddit.com##body.scroll-is-blocked:style(overflow: auto !important; touch-action: auto !important; overscroll-behavior: auto !important)
+
+! Network-layer block on the upsell stylesheet bundle (best-effort)
+||www.redditstatic.com/shwww.reddit/*app-upsell-blocking*$css
+||www.redditstatic.com/shwww.reddit/*app-upsell-blocking*$script
+
+! Popup removal rules
+www.reddit.com###app-upsell-blocking-bottom-sheet-direct > .bg-transparent 
+www.reddit.com##app-upsell-blocking-bottom-sheet-direct
+
+www.reddit.com##.DualPartInterstitial
+
+www.reddit.com###xpromo-bottom-sheet
+
+! www.reddit app ad
+www.reddit.com##.XPromoPopupRpl 
+www.reddit.com##xpromo-new-app-selector 
+www.reddit.com##.bottom-bar, .XPromoBottomBar 
+www.reddit.com##.useApp,.TopNav__promoButton 
+www.reddit.com##body:style(pointer-events:auto!important;)
+
+! Jun 1, 2026
+www.reddit.com###app-upsell-blocking-bottom-sheet-seo
+
+! Prevent scroll locking scripts
+www.reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked, html, stay) 
+www.reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked, body, stay) 
+www.reddit.com##+js(aeld, touchmove, preventDefault) 
+www.reddit.com##:is(.rpl-scroll-lock, .scroll-is-blocked):remove-class(/rpl-scroll-lock|scroll-is-blocked/)
