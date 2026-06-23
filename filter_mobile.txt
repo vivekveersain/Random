@@ -11,9 +11,9 @@ www.reddit.com###xpromo-bottom-sheet
 www.reddit.com##.XPromoPopupRpl
 
 ! www.reddit cleanup (promoted / app-like spam)
-www.reddit.com##shwww.reddit-post[post-type="promoted"]
-www.reddit.com##shwww.reddit-post:has(span:has-text(/^Promoted$/))
-www.reddit.com##shwww.reddit-post:has(span:has-text(APP))
+www.reddit.com##shreddit-post[post-type="promoted"]
+www.reddit.com##shreddit-post:has(span:has-text(/^Promoted$/))
+www.reddit.com##shreddit-post:has(span:has-text(APP))
 www.reddit.com###xpromo-small-header
 www.reddit.com##div#app-upsell-blocking-bottom-sheet-direct.rpl-bottom-sheet > .bg-transparent
 www.reddit.com##.w-full > .flex-1.nd\:visible
@@ -33,8 +33,8 @@ www.reddit.com##body.rpl-scroll-lock:style(overflow: auto !important; padding-ri
 www.reddit.com##body.scroll-is-blocked:style(overflow: auto !important; touch-action: auto !important; overscroll-behavior: auto !important)
 
 ! Network-layer block on the upsell stylesheet bundle (best-effort)
-||www.redditstatic.com/shwww.reddit/*app-upsell-blocking*$css
-||www.redditstatic.com/shwww.reddit/*app-upsell-blocking*$script
+||www.redditstatic.com/shreddit/*app-upsell-blocking*$css
+||www.redditstatic.com/shreddit/*app-upsell-blocking*$script
 
 ! Popup removal rules
 www.reddit.com###app-upsell-blocking-bottom-sheet-direct > .bg-transparent 
